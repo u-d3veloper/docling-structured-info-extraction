@@ -1,0 +1,15 @@
+company_name:
+  type: string
+  description: "The official name of the shipping company, carrier, or shipping line."
+shipper:
+  type: string
+  description: "The name of the shipper, consignor, or the party sending the goods."
+port_of_loading:
+  type: string
+  description: "The specific name or location of the port where the cargo is loaded onto the vessel."
+vessel_name:
+  type: string
+  description: "The name of the ship or vessel carrying the cargo."
+voyage_number:
+  type: string
+  description: "The specific identification number or code of the vessel's voyage."

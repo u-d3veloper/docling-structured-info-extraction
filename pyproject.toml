@@ -1,0 +1,16 @@
+[project]
+name = "sie"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "docling>=2.115.0",
+    "fastapi==0.112.2",
+    "openai>=2.48.0",
+    "pydantic>=2.13.4",
+    "python-multipart>=0.0.32",
+    "pyyaml>=6.0.3",
+    "tenacity>=9.1.4",
+    "uvicorn>=0.51.0",
+]
