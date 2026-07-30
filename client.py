@@ -13,6 +13,8 @@ from tenacity import (
 
 SYSTEM_PROMPT = """
     You are a data extraction assistant. Given the following schema in YAML format, extract the corresponding fields from the provided markdown text. Return the extracted data as a JSON object that adheres to the schema. If a field is not present in the text, return it as null. Do not include any additional information or commentary.
+    schema:
+    {schema_yaml}
 """
 
 
