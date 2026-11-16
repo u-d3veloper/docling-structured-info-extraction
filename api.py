@@ -1,4 +1,5 @@
 import asyncio
+import time
 import yaml
 from concurrent.futures import ThreadPoolExecutor
 from contextlib import asynccontextmanager
@@ -67,6 +68,19 @@ async def process_document(
     schema: Type[BaseModel],
     executor: ThreadPoolExecutor,
 ) -> dict:
+    """Run the extraction pipeline on a single uploaded document.
+
+    Returns a dict containing ``source_file``, ``status`` and either
+    ``extracted_data`` (success) or ``error`` (failure). On success the
+    response also includes a ``timings`` dict with the wall-clock duration of
+    each pipeline stage, in seconds:
+
+    - ``docling_s``: ``Extractor.extract_from_bytes`` call (OCR + layout).
+    - ``llm_s``: ``LLMClient.request`` call (Ollama round-trip + validation).
+
+    These timings are produced for the benchmark that compares several Ollama
+    models and quantization levels; ``time.perf_counter`` is sufficient.
+    """
     filename = file.filename or "unknown"
     try:
         if Path(filename).suffix.lower() not in SUPPORTED_SUFFIXES:
@@ -80,18 +94,26 @@ async def process_document(
 
         loop = asyncio.get_running_loop()
 
+        docling_start = time.perf_counter()
         markdown_text = await loop.run_in_executor(
             executor, extractor.extract_from_bytes, file_bytes, filename
         )
+        docling_s = time.perf_counter() - docling_start
 
+        llm_start = time.perf_counter()
         structured_data = await llm_client.request(
             markdown_text, schema_yaml=schema_yaml, schema=schema
         )
+        llm_s = time.perf_counter() - llm_start
 
         return {
             "source_file": filename,
             "status": "success",
             "extracted_data": structured_data.model_dump(),
+            "timings": {
+                "docling_s": round(docling_s, 3),
+                "llm_s": round(llm_s, 3),
+            },
         }
     except Exception as e:
         return {"source_file": filename, "status": "error", "error": str(e)}
