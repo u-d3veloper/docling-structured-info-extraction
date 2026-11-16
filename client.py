@@ -29,11 +29,18 @@ class LLMClient:
         self.client, self.model_name = self._configure_client(self.provider)
 
     def _configure_client(self, provider: LLMProvider) -> tuple[AsyncOpenAI, str]:
+        """Return the async OpenAI-compatible client and the model name to use.
+
+        For Ollama, the model name is read from the ``OLLAMA_MODEL`` environment
+        variable and defaults to ``llama3.1:latest``. This lets the benchmark
+        swap models and quantizations without editing the code.
+        """
         if provider == LLMProvider.OLLAMA:
             client = AsyncOpenAI(
                 base_url="http://localhost:11434/v1", api_key="ollama_dummy_key"
             )
-            return client, "llama3.1:8b"
+            model_name = os.getenv("OLLAMA_MODEL", "llama3.1:latest")
+            return client, model_name
 
         raise ValueError(f"Unsupported LLM provider: {provider}")
 
