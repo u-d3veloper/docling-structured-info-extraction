@@ -9,7 +9,7 @@ from pydantic import BaseModel
 from typing import Type
 import logging
 from extractor import Extractor
-from client import LLMClient, LLMProvider
+from client import LLMClient
 from models import build_dynamic_model
 
 logger = logging.getLogger(__name__)
@@ -36,7 +36,7 @@ app_states = {}
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     app_states["extractor"] = Extractor()
-    app_states["llm_client"] = LLMClient(provider=LLMProvider.OLLAMA)
+    app_states["llm_client"] = LLMClient()
     app_states["executor"] = ThreadPoolExecutor(max_workers=MAX_CONCURRENT_DOCS)
     yield
     app_states["executor"].shutdown(wait=True)

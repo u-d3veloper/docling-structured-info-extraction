@@ -1,6 +1,5 @@
 import os
 import re
-from enum import Enum
 from typing import Type
 from openai import AsyncOpenAI
 from pydantic import BaseModel
@@ -18,31 +17,19 @@ SYSTEM_PROMPT = """
 """
 
 
-class LLMProvider(Enum):
-    OLLAMA = "ollama"
-    CLOUD = "groq"
-
-
 class LLMClient:
-    def __init__(self, provider: LLMProvider):
-        self.provider = provider
-        self.client, self.model_name = self._configure_client(self.provider)
+    """Async client for the local Ollama server over its OpenAI-compatible API.
 
-    def _configure_client(self, provider: LLMProvider) -> tuple[AsyncOpenAI, str]:
-        """Return the async OpenAI-compatible client and the model name to use.
+    The model name is read from the ``OLLAMA_MODEL`` environment variable and
+    defaults to ``llama3.1:latest``. This lets the benchmark swap models and
+    quantizations without editing the code.
+    """
 
-        For Ollama, the model name is read from the ``OLLAMA_MODEL`` environment
-        variable and defaults to ``llama3.1:latest``. This lets the benchmark
-        swap models and quantizations without editing the code.
-        """
-        if provider == LLMProvider.OLLAMA:
-            client = AsyncOpenAI(
-                base_url="http://localhost:11434/v1", api_key="ollama_dummy_key"
-            )
-            model_name = os.getenv("OLLAMA_MODEL", "llama3.1:latest")
-            return client, model_name
-
-        raise ValueError(f"Unsupported LLM provider: {provider}")
+    def __init__(self):
+        self.client = AsyncOpenAI(
+            base_url="http://localhost:11434/v1", api_key="ollama_dummy_key"
+        )
+        self.model_name = os.getenv("OLLAMA_MODEL", "llama3.1:latest")
 
     @retry(
         stop=stop_after_attempt(3),

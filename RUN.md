@@ -338,6 +338,3 @@ anicroche.
 - **Batch de plusieurs documents dans le même appel** (jusqu'à 5 en parallèle).
   Le code gère `list[UploadFile]`, mais notre test se limitait à un document.
 - **Linux x86_64 / WSL.** Non testé.
-- **Le provider `CLOUD = "groq"`** de l'enum `LLMProvider` (`client.py:23`). Le
-  code ne configure *aucun* client pour cette valeur — `_configure_client`
-  lève `ValueError` si on la passe. C'est donc du code mort aujourd'hui.
