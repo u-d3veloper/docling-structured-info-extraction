@@ -1,0 +1,25 @@
+{
+  "company_name": "ZIM INTEGRATED SHIPPING",
+  "bl_number": "ZIM-2026-576163",
+  "shipper": "Anderson Group, 903 Curtis Walk, Lake Jeanetteberg, Djibouti",
+  "port_of_loading": "Valencia (ESVLC)",
+  "port_of_discharge": "Long Beach (USLGB)",
+  "place_of_acceptance": "Valencia CY",
+  "place_of_delivery": "Long Beach CY",
+  "shipped_on_board_date": "17/01/2026",
+  "vessel_name": "EVER GIVEN",
+  "voyage_number": "V-599E",
+  "mark": "ANDE/LGB/LOT-C",
+  "container_numbers": [
+    "EGHU9907633",
+    "FCIU0157052",
+    "GESU4548907",
+    "EMCU8006722"
+  ],
+  "lots": [
+    "28 pallets electronic components",
+    "32 pallets automotive parts",
+    "12 pallets automotive parts",
+    "31 pallets solar panels"
+  ]
+}

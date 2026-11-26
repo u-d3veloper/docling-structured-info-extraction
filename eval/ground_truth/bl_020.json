@@ -1,0 +1,21 @@
+{
+  "company_name": "OCEANLINE SHIPPING CO.",
+  "bl_number": "OCEA-2026-627452",
+  "shipper": "Owens, Howell and Gibson, 7208 Mccoy Stravenue, Nashton, Lesotho",
+  "port_of_loading": "Felixstowe (GBFXT)",
+  "port_of_discharge": "Busan (KRPUS)",
+  "place_of_acceptance": "Felixstowe CY",
+  "place_of_delivery": "Busan CY",
+  "shipped_on_board_date": "01 JAN 2026",
+  "vessel_name": "MV NORTHERN STAR",
+  "voyage_number": "V-540W",
+  "mark": "OWEN/PUS/LOT-A",
+  "container_numbers": [
+    "CMAU0887435",
+    "MSCU1125502"
+  ],
+  "lots": [
+    "22 cartons frozen seafood",
+    "29 cartons pharmaceutical products"
+  ]
+}

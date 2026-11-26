@@ -1,0 +1,23 @@
+{
+  "company_name": "EVERGREEN MARINE CORP.",
+  "bl_number": "EVER-2026-437858",
+  "shipper": "Torres-Warren, 54095 Susan Green, Josephmouth, Croatia",
+  "port_of_loading": "Felixstowe (GBFXT)",
+  "port_of_discharge": "Long Beach (USLGB)",
+  "place_of_acceptance": "Felixstowe CY",
+  "place_of_delivery": "Long Beach CY",
+  "shipped_on_board_date": "13/01/2026",
+  "vessel_name": "MV BALTIC WIND",
+  "voyage_number": "V-244E",
+  "mark": "TORR/LGB/LOT-B",
+  "container_numbers": [
+    "OOLU5066369",
+    "CMAU7697606",
+    "TEMU8811057"
+  ],
+  "lots": [
+    "31 pallets solar panels",
+    "15 cartons frozen seafood",
+    "15 bales cotton fabric"
+  ]
+}

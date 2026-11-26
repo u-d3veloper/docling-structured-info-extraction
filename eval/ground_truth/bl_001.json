@@ -1,0 +1,23 @@
+{
+  "company_name": "MAERSK LINE",
+  "bl_number": "MAER-2026-252721",
+  "shipper": "Johnson and Sons, 54357 Alex Summit, Kellyfort, Romania",
+  "port_of_loading": "Singapore (SGSIN)",
+  "port_of_discharge": "Hong Kong (HKHKG)",
+  "place_of_acceptance": "Singapore CY",
+  "place_of_delivery": "Hong Kong CY",
+  "shipped_on_board_date": "03 JUN 2026",
+  "vessel_name": "CMA CGM MARCO POLO",
+  "voyage_number": "V-320W",
+  "mark": "JOHN/HKG/LOT-B",
+  "container_numbers": [
+    "OOLU0054473",
+    "TGHU8672246",
+    "MAEU9829387"
+  ],
+  "lots": [
+    "15 pallets solar panels",
+    "29 crates furniture",
+    "32 bales cotton fabric"
+  ]
+}

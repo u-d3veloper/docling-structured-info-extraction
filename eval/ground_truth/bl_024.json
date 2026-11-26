@@ -1,0 +1,19 @@
+{
+  "company_name": "HAPAG-LLOYD AG",
+  "bl_number": "HAPA-2026-923598",
+  "shipper": "Weiss, Burton and Jones, 05947 Bruce Hill Apt. 391, Kingberg, Dominican Republic",
+  "port_of_loading": "Shanghai (CNSHA)",
+  "port_of_discharge": "Hong Kong (HKHKG)",
+  "place_of_acceptance": "Shanghai CY",
+  "place_of_delivery": "Hong Kong CY",
+  "shipped_on_board_date": "20 NOV 2026",
+  "vessel_name": "MV BALTIC WIND",
+  "voyage_number": "V-466W",
+  "mark": "WEIS/HKG/LOT-D",
+  "container_numbers": [
+    "TRIU8343570"
+  ],
+  "lots": [
+    "15 cartons frozen seafood"
+  ]
+}

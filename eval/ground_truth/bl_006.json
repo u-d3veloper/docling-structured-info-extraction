@@ -1,0 +1,25 @@
+{
+  "company_name": "ONE (OCEAN NETWORK EXPRESS)",
+  "bl_number": "ONE-2026-322653",
+  "shipper": "Gibbs, Hudson and Robertson, 18960 Theresa Ridge, South Brittanychester, Djibouti",
+  "port_of_loading": "Yokohama (JPYOK)",
+  "port_of_discharge": "Singapore (SGSIN)",
+  "place_of_acceptance": "Yokohama CY",
+  "place_of_delivery": "Singapore CY",
+  "shipped_on_board_date": "02 AUG 2026",
+  "vessel_name": "MV NORTHERN STAR",
+  "voyage_number": "V-362W",
+  "mark": "GIBB/SIN/LOT-A",
+  "container_numbers": [
+    "MSCU9274821",
+    "TEMU5409511",
+    "TRIU4448531",
+    "EMCU9983113"
+  ],
+  "lots": [
+    "26 pallets steel coils",
+    "37 pallets solar panels",
+    "22 pallets electronic components",
+    "11 pallets automotive parts"
+  ]
+}

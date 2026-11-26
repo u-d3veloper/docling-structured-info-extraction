@@ -1,0 +1,21 @@
+{
+  "company_name": "CMA CGM",
+  "bl_number": "CMA-2026-902153",
+  "shipper": "Myers, Sanders and Bullock, 7222 Kathryn View Apt. 778, West Christyberg, Libyan Arab Jamahiriya",
+  "port_of_loading": "Rotterdam (NLRTM)",
+  "port_of_discharge": "Singapore (SGSIN)",
+  "place_of_acceptance": "Rotterdam CY",
+  "place_of_delivery": "Singapore CY",
+  "shipped_on_board_date": "March 16, 2026",
+  "vessel_name": "MV CORAL STAR",
+  "voyage_number": "V-450W",
+  "mark": "MYER/SIN/LOT-B",
+  "container_numbers": [
+    "CMAU1116073",
+    "CAIU7123009"
+  ],
+  "lots": [
+    "12 cartons frozen seafood",
+    "26 cartons toys"
+  ]
+}

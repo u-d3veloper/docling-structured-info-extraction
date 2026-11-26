@@ -1,0 +1,23 @@
+{
+  "company_name": "ONE (OCEAN NETWORK EXPRESS)",
+  "bl_number": "ONE-2026-964611",
+  "shipper": "Rodriguez-Oliver, 6877 John Forest, Popeview, Gibraltar",
+  "port_of_loading": "Rotterdam (NLRTM)",
+  "port_of_discharge": "Piraeus (GRPIR)",
+  "place_of_acceptance": "Rotterdam CY",
+  "place_of_delivery": "Piraeus CY",
+  "shipped_on_board_date": "2026-10-23",
+  "vessel_name": "MV NORTHERN STAR",
+  "voyage_number": "V-181W",
+  "mark": "RODR/PIR/LOT-B",
+  "container_numbers": [
+    "TCLU6181590",
+    "FCIU4115646",
+    "TCLU2495102"
+  ],
+  "lots": [
+    "11 pallets steel coils",
+    "17 pallets packaged food",
+    "14 pallets packaged food"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "company_name": "ZIM INTEGRATED SHIPPING",
+  "bl_number": "ZIM-2026-964604",
+  "shipper": "Smith and Sons, 561 James Walks, West Nathanton, North Macedonia",
+  "port_of_loading": "Antwerp (BEANR)",
+  "port_of_discharge": "Piraeus (GRPIR)",
+  "place_of_acceptance": "Antwerp CY",
+  "place_of_delivery": "Piraeus CY",
+  "shipped_on_board_date": "20 DEC 2026",
+  "vessel_name": "MAERSK ESSEN",
+  "voyage_number": "V-667W",
+  "mark": "SMIT/PIR/LOT-D",
+  "container_numbers": [
+    "CAIU3987013",
+    "SEGU5163294"
+  ],
+  "lots": [
+    "19 pallets automotive parts",
+    "39 pallets electronic components"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "company_name": "ZIM INTEGRATED SHIPPING",
+  "bl_number": "ZIM-2026-389614",
+  "shipper": "Jones, Spencer and Baker, 36676 Scott Mountain, South Troyburgh, Greenland",
+  "port_of_loading": "Le Havre (FRLEH)",
+  "port_of_discharge": "Hamburg (DEHAM)",
+  "place_of_acceptance": "Le Havre CY",
+  "place_of_delivery": "Hamburg CY",
+  "shipped_on_board_date": "12 MAR 2026",
+  "vessel_name": "MV NORTHERN STAR",
+  "voyage_number": "V-373W",
+  "mark": "JONE/HAM/LOT-B",
+  "container_numbers": [
+    "MRKU4082382",
+    "OOLU3497710"
+  ],
+  "lots": [
+    "35 cartons toys",
+    "21 cartons frozen seafood"
+  ]
+}

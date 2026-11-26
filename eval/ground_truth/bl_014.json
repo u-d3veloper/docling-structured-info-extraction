@@ -1,0 +1,25 @@
+{
+  "company_name": "HAPAG-LLOYD AG",
+  "bl_number": "HAPA-2026-556504",
+  "shipper": "Anderson PLC, 863 Wright Pine Suite 014, Danielborough, Colombia",
+  "port_of_loading": "Shanghai (CNSHA)",
+  "port_of_discharge": "Dubai (Jebel Ali) (AEJEA)",
+  "place_of_acceptance": "Shanghai CY",
+  "place_of_delivery": "Dubai (Jebel Ali) CY",
+  "shipped_on_board_date": "2026-10-03",
+  "vessel_name": "MV ATLANTIC SPIRIT",
+  "voyage_number": "V-420E",
+  "mark": "ANDE/JEA/LOT-D",
+  "container_numbers": [
+    "GESU0275018",
+    "CMAU1561567",
+    "MSCU3509620",
+    "MSKU3569573"
+  ],
+  "lots": [
+    "26 crates furniture",
+    "23 cartons pharmaceutical products",
+    "30 bags rice (jasmine)",
+    "31 pallets solar panels"
+  ]
+}

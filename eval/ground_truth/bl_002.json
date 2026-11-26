@@ -1,0 +1,19 @@
+{
+  "company_name": "MSC MEDITERRANEAN SHIPPING COMPANY",
+  "bl_number": "MSC-2026-232139",
+  "shipper": "Tucker-Wilson, 9847 Matthew Plaza, Port Patrickborough, Saudi Arabia",
+  "port_of_loading": "Shanghai (CNSHA)",
+  "port_of_discharge": "Piraeus (GRPIR)",
+  "place_of_acceptance": "Shanghai CY",
+  "place_of_delivery": "Piraeus CY",
+  "shipped_on_board_date": "2026-09-17",
+  "vessel_name": "MSC ANNA",
+  "voyage_number": "V-221E",
+  "mark": "TUCK/PIR/LOT-B",
+  "container_numbers": [
+    "HLXU4824514"
+  ],
+  "lots": [
+    "12 pallets solar panels"
+  ]
+}

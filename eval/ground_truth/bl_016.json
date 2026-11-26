@@ -1,0 +1,21 @@
+{
+  "company_name": "ONE (OCEAN NETWORK EXPRESS)",
+  "bl_number": "ONE-2026-502163",
+  "shipper": "Smith, Cook and Thomas, 443 Wu Loop, Velezton, Taiwan",
+  "port_of_loading": "Antwerp (BEANR)",
+  "port_of_discharge": "Long Beach (USLGB)",
+  "place_of_acceptance": "Antwerp CY",
+  "place_of_delivery": "Long Beach CY",
+  "shipped_on_board_date": "15 JAN 2026",
+  "vessel_name": "CMA CGM MARCO POLO",
+  "voyage_number": "V-962W",
+  "mark": "SMIT/LGB/LOT-B",
+  "container_numbers": [
+    "MRKU0398201",
+    "SEGU5950978"
+  ],
+  "lots": [
+    "31 pallets ceramic tiles",
+    "20 bags rice (jasmine)"
+  ]
+}

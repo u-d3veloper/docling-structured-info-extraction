@@ -1,0 +1,21 @@
+{
+  "company_name": "EVERGREEN MARINE CORP.",
+  "bl_number": "EVER-2026-713490",
+  "shipper": "Medina-Reyes, 573 Singh Fort Apt. 919, South Jamesville, Bhutan",
+  "port_of_loading": "Antwerp (BEANR)",
+  "port_of_discharge": "Singapore (SGSIN)",
+  "place_of_acceptance": "Antwerp CY",
+  "place_of_delivery": "Singapore CY",
+  "shipped_on_board_date": "21 OCT 2026",
+  "vessel_name": "EVER GLORY",
+  "voyage_number": "V-357E",
+  "mark": "MEDI/SIN/LOT-D",
+  "container_numbers": [
+    "HLXU3859440",
+    "EGHU0420834"
+  ],
+  "lots": [
+    "13 cartons toys",
+    "28 pallets machinery spare parts"
+  ]
+}

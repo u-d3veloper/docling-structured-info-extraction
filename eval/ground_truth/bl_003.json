@@ -1,0 +1,25 @@
+{
+  "company_name": "CMA CGM",
+  "bl_number": "CMA-2026-467040",
+  "shipper": "Kelly-Wade, 034 Park Fall Apt. 918, Kristinaburgh, French Guiana",
+  "port_of_loading": "Ningbo (CNNGB)",
+  "port_of_discharge": "Antwerp (BEANR)",
+  "place_of_acceptance": "Ningbo CY",
+  "place_of_delivery": "Antwerp CY",
+  "shipped_on_board_date": "28 FEB 2026",
+  "vessel_name": "MV EMERALD SEA",
+  "voyage_number": "V-598W",
+  "mark": "KELL/ANR/LOT-B",
+  "container_numbers": [
+    "HLBU8473581",
+    "HLXU0653650",
+    "APZU7034423",
+    "HLXU8291840"
+  ],
+  "lots": [
+    "35 pallets steel coils",
+    "15 cartons frozen seafood",
+    "12 drums industrial lubricant",
+    "34 crates furniture"
+  ]
+}

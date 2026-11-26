@@ -1,0 +1,25 @@
+{
+  "company_name": "MAERSK LINE",
+  "bl_number": "MAER-2026-558369",
+  "shipper": "Lozano-Ortiz, 50962 Jamie Landing, Harpermouth, Maldives",
+  "port_of_loading": "Valencia (ESVLC)",
+  "port_of_discharge": "Hamburg (DEHAM)",
+  "place_of_acceptance": "Valencia CY",
+  "place_of_delivery": "Hamburg CY",
+  "shipped_on_board_date": "September 16, 2026",
+  "vessel_name": "MV SOUTHERN CROSS",
+  "voyage_number": "V-439W",
+  "mark": "LOZA/HAM/LOT-D",
+  "container_numbers": [
+    "CMAU1819029",
+    "CAIU2643543",
+    "CMAU1128177",
+    "TRIU1099272"
+  ],
+  "lots": [
+    "25 crates furniture",
+    "14 pallets electronic components",
+    "18 crates furniture",
+    "32 cartons toys"
+  ]
+}

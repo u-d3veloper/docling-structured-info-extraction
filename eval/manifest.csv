@@ -1,0 +1,31 @@
+id,template,degrade_level,consignee_to_order,notify_same_as_consignee,date_format,weight_format
+bl_001,2,heavy,0,0,%d %b %Y,"{:,} KG"
+bl_002,3,light,1,1,%Y-%m-%d,{} kg
+bl_003,1,heavy,0,0,%d %b %Y,"{:,} KG"
+bl_004,2,light,0,0,%d %b %Y,"{:,} KG"
+bl_005,3,heavy,1,1,%d/%m/%Y,"{:,} KGS"
+bl_006,1,light,0,0,%d %b %Y,"{:,} KG"
+bl_007,2,heavy,0,0,%d %b %Y,"{:,} KG"
+bl_008,3,light,1,1,%d %b %Y,"{:,} KG"
+bl_009,1,heavy,0,0,%d %b %Y,"{:,} KG"
+bl_010,2,light,0,0,%d %b %Y,"{:,} KG"
+bl_011,3,heavy,1,1,"%B %d, %Y",{} KGS
+bl_012,1,light,0,0,%d %b %Y,"{:,} KG"
+bl_013,2,heavy,0,0,%d %b %Y,"{:,} KG"
+bl_014,3,light,1,1,%Y-%m-%d,{} kg
+bl_015,1,heavy,0,0,%d %b %Y,"{:,} KG"
+bl_016,2,light,0,0,%d %b %Y,"{:,} KG"
+bl_017,3,heavy,1,1,%d/%m/%Y,"{:,} KGS"
+bl_018,1,light,0,0,%d %b %Y,"{:,} KG"
+bl_019,2,heavy,0,0,%d %b %Y,"{:,} KG"
+bl_020,3,light,1,1,%d %b %Y,"{:,} KG"
+bl_021,1,heavy,0,0,%d %b %Y,"{:,} KG"
+bl_022,2,light,0,0,%d %b %Y,"{:,} KG"
+bl_023,3,heavy,1,1,"%B %d, %Y",{} KGS
+bl_024,1,light,0,0,%d %b %Y,"{:,} KG"
+bl_025,2,heavy,0,0,%d %b %Y,"{:,} KG"
+bl_026,3,light,1,1,%Y-%m-%d,{} kg
+bl_027,1,heavy,0,0,%d %b %Y,"{:,} KG"
+bl_028,2,light,0,0,%d %b %Y,"{:,} KG"
+bl_029,3,heavy,1,1,%d/%m/%Y,"{:,} KGS"
+bl_030,1,light,0,0,%d %b %Y,"{:,} KG"

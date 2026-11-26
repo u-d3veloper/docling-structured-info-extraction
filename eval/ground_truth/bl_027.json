@@ -1,0 +1,19 @@
+{
+  "company_name": "COSCO SHIPPING LINES",
+  "bl_number": "COSC-2026-236964",
+  "shipper": "Ryan Ltd, 1011 Edward Overpass Apt. 094, Stacyburgh, Kyrgyz Republic",
+  "port_of_loading": "Long Beach (USLGB)",
+  "port_of_discharge": "Qingdao (CNTAO)",
+  "place_of_acceptance": "Long Beach CY",
+  "place_of_delivery": "Qingdao CY",
+  "shipped_on_board_date": "10 JUL 2026",
+  "vessel_name": "MV SILVER ARROW",
+  "voyage_number": "V-136W",
+  "mark": "RYAN/TAO/LOT-D",
+  "container_numbers": [
+    "OOLU9226948"
+  ],
+  "lots": [
+    "10 pallets automotive parts"
+  ]
+}

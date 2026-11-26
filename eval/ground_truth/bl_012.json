@@ -1,0 +1,19 @@
+{
+  "company_name": "MSC MEDITERRANEAN SHIPPING COMPANY",
+  "bl_number": "MSC-2026-192685",
+  "shipper": "Hamilton, Santos and Leonard, 6384 Matthew Lakes Suite 173, Brittanyshire, Paraguay",
+  "port_of_loading": "Los Angeles (USLAX)",
+  "port_of_discharge": "Oakland (USOAK)",
+  "place_of_acceptance": "Los Angeles CY",
+  "place_of_delivery": "Oakland CY",
+  "shipped_on_board_date": "15 SEP 2026",
+  "vessel_name": "MV BALTIC WIND",
+  "voyage_number": "V-566W",
+  "mark": "HAMI/OAK/LOT-C",
+  "container_numbers": [
+    "TGHU0214123"
+  ],
+  "lots": [
+    "29 cartons toys"
+  ]
+}

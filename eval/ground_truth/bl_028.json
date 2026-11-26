@@ -1,0 +1,21 @@
+{
+  "company_name": "YANG MING MARINE TRANSPORT",
+  "bl_number": "YANG-2026-188888",
+  "shipper": "Lawrence, Avery and Savage, 3478 Dominguez Hill, Port Brittanyshire, Uruguay",
+  "port_of_loading": "Qingdao (CNTAO)",
+  "port_of_discharge": "Singapore (SGSIN)",
+  "place_of_acceptance": "Qingdao CY",
+  "place_of_delivery": "Singapore CY",
+  "shipped_on_board_date": "10 APR 2026",
+  "vessel_name": "MSC ANNA",
+  "voyage_number": "V-559W",
+  "mark": "LAWR/SIN/LOT-C",
+  "container_numbers": [
+    "TGHU2144350",
+    "FCIU4287542"
+  ],
+  "lots": [
+    "14 pallets packaged food",
+    "15 cartons pharmaceutical products"
+  ]
+}

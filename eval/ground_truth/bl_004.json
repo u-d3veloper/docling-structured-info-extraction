@@ -1,0 +1,21 @@
+{
+  "company_name": "HAPAG-LLOYD AG",
+  "bl_number": "HAPA-2026-472444",
+  "shipper": "Monroe-Lyons, 120 Laurie Inlet, Wilcoxtown, Italy",
+  "port_of_loading": "Dubai (Jebel Ali) (AEJEA)",
+  "port_of_discharge": "Le Havre (FRLEH)",
+  "place_of_acceptance": "Dubai (Jebel Ali) CY",
+  "place_of_delivery": "Le Havre CY",
+  "shipped_on_board_date": "11 JUL 2026",
+  "vessel_name": "MV PACIFIC VOYAGER",
+  "voyage_number": "V-983W",
+  "mark": "MONR/LEH/LOT-B",
+  "container_numbers": [
+    "EGHU9717839",
+    "TCLU3175778"
+  ],
+  "lots": [
+    "24 cartons pharmaceutical products",
+    "18 cartons toys"
+  ]
+}

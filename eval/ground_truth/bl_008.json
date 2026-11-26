@@ -1,0 +1,21 @@
+{
+  "company_name": "YANG MING MARINE TRANSPORT",
+  "bl_number": "YANG-2026-448937",
+  "shipper": "Rodriguez-King, 393 Powell Prairie, Lake Christopher, Singapore",
+  "port_of_loading": "Singapore (SGSIN)",
+  "port_of_discharge": "Qingdao (CNTAO)",
+  "place_of_acceptance": "Singapore CY",
+  "place_of_delivery": "Qingdao CY",
+  "shipped_on_board_date": "21 FEB 2026",
+  "vessel_name": "MV GOLDEN GATE",
+  "voyage_number": "V-943E",
+  "mark": "RODR/TAO/LOT-A",
+  "container_numbers": [
+    "APZU9728104",
+    "EMCU6159487"
+  ],
+  "lots": [
+    "39 drums industrial lubricant",
+    "27 pallets steel coils"
+  ]
+}

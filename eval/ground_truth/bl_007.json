@@ -1,0 +1,23 @@
+{
+  "company_name": "COSCO SHIPPING LINES",
+  "bl_number": "COSC-2026-330768",
+  "shipper": "Floyd, Garcia and Miller, 728 Adrian Parkways Suite 159, Amandamouth, Mayotte",
+  "port_of_loading": "Qingdao (CNTAO)",
+  "port_of_discharge": "Hong Kong (HKHKG)",
+  "place_of_acceptance": "Qingdao CY",
+  "place_of_delivery": "Hong Kong CY",
+  "shipped_on_board_date": "03 JUN 2026",
+  "vessel_name": "CMA CGM MARCO POLO",
+  "voyage_number": "V-607W",
+  "mark": "FLOY/HKG/LOT-C",
+  "container_numbers": [
+    "GESU5449581",
+    "OOLU5743578",
+    "SEGU4750677"
+  ],
+  "lots": [
+    "34 drums industrial lubricant",
+    "10 crates furniture",
+    "26 pallets textile goods"
+  ]
+}

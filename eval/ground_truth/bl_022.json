@@ -1,0 +1,19 @@
+{
+  "company_name": "MSC MEDITERRANEAN SHIPPING COMPANY",
+  "bl_number": "MSC-2026-774005",
+  "shipper": "Harmon-Padilla, 92601 Matthew Glens Suite 082, Marymouth, Iraq",
+  "port_of_loading": "Hong Kong (HKHKG)",
+  "port_of_discharge": "Dubai (Jebel Ali) (AEJEA)",
+  "place_of_acceptance": "Hong Kong CY",
+  "place_of_delivery": "Dubai (Jebel Ali) CY",
+  "shipped_on_board_date": "31 JUL 2026",
+  "vessel_name": "EVER GIVEN",
+  "voyage_number": "V-306W",
+  "mark": "HARM/JEA/LOT-D",
+  "container_numbers": [
+    "MSKU1445758"
+  ],
+  "lots": [
+    "31 pallets solar panels"
+  ]
+}

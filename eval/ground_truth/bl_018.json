@@ -1,0 +1,19 @@
+{
+  "company_name": "YANG MING MARINE TRANSPORT",
+  "bl_number": "YANG-2026-486757",
+  "shipper": "Nash-Berry, 385 Parks Springs, Thomaston, Russian Federation",
+  "port_of_loading": "Hamburg (DEHAM)",
+  "port_of_discharge": "Antwerp (BEANR)",
+  "place_of_acceptance": "Hamburg CY",
+  "place_of_delivery": "Antwerp CY",
+  "shipped_on_board_date": "05 JUN 2026",
+  "vessel_name": "MV CORAL STAR",
+  "voyage_number": "V-868E",
+  "mark": "NASH/ANR/LOT-A",
+  "container_numbers": [
+    "EGHU0355913"
+  ],
+  "lots": [
+    "32 crates furniture"
+  ]
+}

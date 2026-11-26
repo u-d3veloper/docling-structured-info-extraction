@@ -1,0 +1,19 @@
+{
+  "company_name": "CMA CGM",
+  "bl_number": "CMA-2026-554111",
+  "shipper": "Thornton Ltd, 411 Edwards Point, Port Jeffery, Azerbaijan",
+  "port_of_loading": "New York (USNYC)",
+  "port_of_discharge": "Dubai (Jebel Ali) (AEJEA)",
+  "place_of_acceptance": "New York CY",
+  "place_of_delivery": "Dubai (Jebel Ali) CY",
+  "shipped_on_board_date": "05 JAN 2026",
+  "vessel_name": "MV OCEAN HARMONY",
+  "voyage_number": "V-612E",
+  "mark": "THOR/JEA/LOT-A",
+  "container_numbers": [
+    "EGHU9582158"
+  ],
+  "lots": [
+    "31 pallets machinery spare parts"
+  ]
+}

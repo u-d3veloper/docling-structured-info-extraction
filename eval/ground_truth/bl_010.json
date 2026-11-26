@@ -1,0 +1,25 @@
+{
+  "company_name": "OCEANLINE SHIPPING CO.",
+  "bl_number": "OCEA-2026-128521",
+  "shipper": "Jackson Inc, 8580 Melissa Villages Apt. 141, New Morgan, Jersey",
+  "port_of_loading": "Shanghai (CNSHA)",
+  "port_of_discharge": "Tianjin (CNTSN)",
+  "place_of_acceptance": "Shanghai CY",
+  "place_of_delivery": "Tianjin CY",
+  "shipped_on_board_date": "16 SEP 2026",
+  "vessel_name": "MV NORTHERN STAR",
+  "voyage_number": "V-272W",
+  "mark": "JACK/TSN/LOT-C",
+  "container_numbers": [
+    "MSKU3447132",
+    "SEGU9393931",
+    "OOLU6793146",
+    "MSCU7874806"
+  ],
+  "lots": [
+    "10 pallets machinery spare parts",
+    "23 pallets ceramic tiles",
+    "25 pallets ceramic tiles",
+    "31 pallets steel coils"
+  ]
+}

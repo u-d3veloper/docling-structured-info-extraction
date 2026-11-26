@@ -1,0 +1,25 @@
+{
+  "company_name": "OCEANLINE SHIPPING CO.",
+  "bl_number": "OCEA-2026-373089",
+  "shipper": "Jones-Simon, 4277 Hannah Walks, Port Christina, Benin",
+  "port_of_loading": "Felixstowe (GBFXT)",
+  "port_of_discharge": "Piraeus (GRPIR)",
+  "place_of_acceptance": "Felixstowe CY",
+  "place_of_delivery": "Piraeus CY",
+  "shipped_on_board_date": "30 NOV 2026",
+  "vessel_name": "MSC ANNA",
+  "voyage_number": "V-204E",
+  "mark": "JONE/PIR/LOT-D",
+  "container_numbers": [
+    "HLXU5560442",
+    "FCIU6913856",
+    "FCIU7534348",
+    "TRIU9260130"
+  ],
+  "lots": [
+    "20 pallets automotive parts",
+    "18 bales cotton fabric",
+    "22 pallets electronic components",
+    "27 crates furniture"
+  ]
+}

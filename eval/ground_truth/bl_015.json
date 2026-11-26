@@ -1,0 +1,19 @@
+{
+  "company_name": "EVERGREEN MARINE CORP.",
+  "bl_number": "EVER-2026-665547",
+  "shipper": "Campbell, Durham and Rhodes, 86406 Smith Turnpike, Port Elizabethbury, Honduras",
+  "port_of_loading": "Dubai (Jebel Ali) (AEJEA)",
+  "port_of_discharge": "Singapore (SGSIN)",
+  "place_of_acceptance": "Dubai (Jebel Ali) CY",
+  "place_of_delivery": "Singapore CY",
+  "shipped_on_board_date": "03 OCT 2026",
+  "vessel_name": "EVER GLORY",
+  "voyage_number": "V-682W",
+  "mark": "CAMP/SIN/LOT-D",
+  "container_numbers": [
+    "OOLU3599944"
+  ],
+  "lots": [
+    "25 crates furniture"
+  ]
+}

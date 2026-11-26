@@ -1,0 +1,23 @@
+{
+  "company_name": "COSCO SHIPPING LINES",
+  "bl_number": "COSC-2026-527020",
+  "shipper": "Carey, Allison and Jenkins, 343 Stevens Glen, New Duane, Germany",
+  "port_of_loading": "Tianjin (CNTSN)",
+  "port_of_discharge": "Busan (KRPUS)",
+  "place_of_acceptance": "Tianjin CY",
+  "place_of_delivery": "Busan CY",
+  "shipped_on_board_date": "01/03/2026",
+  "vessel_name": "HAPAG EXPRESS",
+  "voyage_number": "V-684E",
+  "mark": "CARE/PUS/LOT-B",
+  "container_numbers": [
+    "BEAU8411643",
+    "SEGU8234025",
+    "FCIU4436707"
+  ],
+  "lots": [
+    "16 cartons toys",
+    "37 pallets electronic components",
+    "27 pallets ceramic tiles"
+  ]
+}
