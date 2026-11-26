@@ -77,10 +77,6 @@ ollama list | grep llama3.1
 # llama3.1:latest    8.0B    Q4_K_M    ~4.9 GB
 ```
 
-> Note historique : le code public référençait `llama3.1:8b`. Avec la variable
-> d'environnement, n'importe quel tag Ollama installé localement convient.
-> Pour les pièges de résolution de tag, voir § 6 « Problèmes fréquents ».
-
 ## 4. Lancement
 
 Deux processus doivent tourner.
@@ -281,54 +277,31 @@ zero-padded de 11 Mo.
 
 ## 6. Problèmes fréquents (réellement rencontrés)
 
-### 6.1 `model 'llama3.1:8b' not found` (statut HTTP 200 côté API mais `status: error` dans le YAML)
-
-La version publiée de `client.py:36` référençait `llama3.1:8b`. Ollama n'alias
-pas automatiquement `llama3.1:latest` vers `llama3.1:8b`, donc même si vous
-avez le modèle 8B installé sous le tag `latest`, le serveur retourne
-`not_found_error`. Trois solutions :
-
-- **Patché dans ce repo** : `client.py` pointe désormais sur `llama3.1:latest`.
-- Sinon, créer un alias local sans télécharger :
-  ```bash
-  ollama cp llama3.1:latest llama3.1:8b
-  ```
-- Ou tirer le tag exact :
-  ```bash
-  ollama pull llama3.1:8b
-  ```
-
-### 6.2 L'API ne répond pas pendant ~2 minutes au premier `/extract`
+### 6.1 L'API ne répond pas pendant ~2 minutes au premier `/extract`
 
 Attendu. Docling télécharge ses modèles (layout analysis, table structure,
 OCR). À froid sur Apple Silicon M2 : 2 min 16 s pour un BL d'une page ; à
 chaud : 24 s. Augmenter le timeout curl en conséquence (`--max-time 300`).
 
-### 6.3 Le polling `/health` échoue immédiatement après `uvicorn`
+### 6.2 Le polling `/health` échoue immédiatement après `uvicorn`
 
 Le process démarre en quelques secondes, mais les toutes premières
 sollicitations peuvent tomber en "Connection refused". Boucler sur une
 poll-check courte (ex. toutes les 3 s pendant 30 s) suffit.
 
-### 6.4 Artéfacts OCR dans la sortie
+### 6.3 Artéfacts OCR dans la sortie
 
 Observé : `textile g0ods` (0 à la place de "o") dans la liste `lots`. C'est
 une caractéristique du moteur OCR docling sur image rastérisée, pas un bug
 applicatif. Pour des documents de production, préférer des PDFs natifs (texte
 sélectionnable) aux scans quand c'est possible.
 
-### 6.5 Tous les champs sortent à `null`
+### 6.4 Tous les champs sortent à `null`
 
 `client.py:90` lève une `ValueError` quand `all(value is None for ...)` et
 `tenacity` retente. Si l'erreur persiste après 3 tentatives, c'est généralement
 que le Markdown rendu par docling est vide (image illisible, PDF endommagé) ou
 que le schéma décrit des champs introuvables dans ce document.
-
-### 6.6 Le code demande Python ≥ 3.11 mais `.python-version` dit 3.11
-
-`.python-version` indique à uv quel interpréteur créer dans `.venv/`. Tout
-Python ≥ 3.11 fonctionne. Testé ici avec Python 3.13.7 installé par uv sans
-anicroche.
 
 ## 7. Ce qui n'est pas testé dans ce RUN
 

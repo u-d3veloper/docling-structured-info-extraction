@@ -40,9 +40,7 @@ schema:
 class LLMClient:
     """Async client for the local Ollama server over its OpenAI-compatible API.
 
-    The model name is read from the ``OLLAMA_MODEL`` environment variable and
-    defaults to ``llama3.1:latest``. This lets the benchmark swap models and
-    quantizations without editing the code.
+    The model tag is read from ``OLLAMA_MODEL`` (default ``llama3.1:latest``).
     """
 
     def __init__(self):
@@ -60,17 +58,7 @@ class LLMClient:
     async def request(
         self, markdown_text: str, schema_yaml: str, schema: Type[BaseModel]
     ) -> BaseModel:
-        """
-        Extract structured data from markdown text using the specified LLM provider and schema.
-
-        Args:
-            markdown_text (str): The text extracted from the document in Markdown format.
-            schema_yaml (str): The YAML representation of the schema to which the extracted data should conform
-            schema (Type[BaseModel]): The Pydantic model class representing the schema.
-
-        Returns:
-            BaseModel: An instance of the Pydantic model populated with the extracted data.
-        """
+        """Call the LLM, parse the JSON response, validate against ``schema``."""
         response = await self.client.chat.completions.create(
             model=self.model_name,
             messages=[
@@ -84,12 +72,7 @@ class LLMClient:
             response_format={"type": "json_object"},
         )
 
-        raw_content = response.choices[0].message.content
-        if not raw_content:
-            raise ValueError(
-                "No content returned from LLM. Please check the input and schema."
-            )
-
+        raw_content = response.choices[0].message.content or ""
         match = re.search(r"```(?:json)?\s*(.*?)\s*```", raw_content, re.DOTALL)
         clean_json_str = match.group(1) if match else raw_content.strip()
 
@@ -100,6 +83,7 @@ class LLMClient:
                 f"Pydantic validation failed: {e}\nPayload: {clean_json_str}"
             )
 
+        # All-null response usually means the prompt wasn't understood; retry via tenacity.
         if all(value is None for value in model.model_dump().values()):
             raise ValueError(f"All fields are null. Payload: {clean_json_str}")
 

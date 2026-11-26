@@ -70,16 +70,8 @@ async def process_document(
 ) -> dict:
     """Run the extraction pipeline on a single uploaded document.
 
-    Returns a dict containing ``source_file``, ``status`` and either
-    ``extracted_data`` (success) or ``error`` (failure). On success the
-    response also includes a ``timings`` dict with the wall-clock duration of
-    each pipeline stage, in seconds:
-
-    - ``docling_s``: ``Extractor.extract_from_bytes`` call (OCR + layout).
-    - ``llm_s``: ``LLMClient.request`` call (Ollama round-trip + validation).
-
-    These timings are produced for the benchmark that compares several Ollama
-    models and quantization levels; ``time.perf_counter`` is sufficient.
+    Returns ``{source_file, status, extracted_data|error, timings}``.
+    ``timings`` holds the wall-clock seconds of ``docling_s`` and ``llm_s``.
     """
     filename = file.filename or "unknown"
     try:

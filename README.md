@@ -1,12 +1,6 @@
 # SIE (Structured Information Extraction) Service
 
-## About this README
-
-In this README you'll find two main sections: the first section help you launch the service and use it. The second section is a more technical description of the service, its architecture and how it works, along with technical choices as well as trade-offs regarding the exercice requirements.
-
-## About the SIE Service
-
-The goal of the SIE service as described in the requirements is to extract structured information from scanned documents and PDF following a user-given schema. It is designed to be able to process documents in a variety of formats, including images and PDFs, and extract relevant information from them. 
+Extract structured information from scanned documents and PDFs against a user-provided YAML schema. Accepts PDF and common image formats; returns a YAML report.
 
 # 1. Launching the service
 
@@ -14,15 +8,13 @@ The goal of the SIE service as described in the requirements is to extract struc
 
 ### 1.1.1 Hardware and OS
 
-The service was developed and validated on **macOS 14+ / Apple Silicon (M2)**. It is
-platform-independent by design: the document conversion pipeline is pinned to CPU
-execution (see [1.2.4](#124-note-on-cpu--gpu-execution)), so nothing in the code
-depends on a particular accelerator.
+Developed on macOS 14+ / Apple Silicon (M2). The document conversion pipeline
+runs on CPU, so no platform-specific dependency.
 
-| Platform                        | Tested           | Notes                                                                                                     |
-| ------------------------------- | ---------------- | --------------------------------------------------------------------------------------------------------- |
-| macOS, Apple Silicon (M1/M2/M3) | Yes        | Reference platform. Unified memory, no GPU/CPU split to worry about.                                      |
-| Linux, x86_64                   | Yes | See [2.2.1](#221-note-on-cpu--gpu-execution) if you have a discrete NVIDIA GPU.                           |
+| Platform                        | Tested |
+| ------------------------------- | ------ |
+| macOS, Apple Silicon (M1/M2/M3) | Yes    |
+| Linux, x86_64                   | Yes    |
 
 
 Minimum practical resources: 4 CPU cores and 16 GB of RAM. The LLM alone
@@ -84,7 +76,7 @@ Ollama first — on macOS and Windows the desktop app starts the server
 automatically; on Linux, or if you installed the CLI only:
 
 ```bash
-ollama run ollama run llama3.1:8b-instruct-q4_K_M
+ollama run llama3.1:8b-instruct-q4_K_M
 ```
 once the invite loads on your terminal screen you can type /bye. The model stays resident in memory and is still serving requests.
 

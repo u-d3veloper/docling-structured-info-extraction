@@ -35,17 +35,7 @@ class Extractor:
         )
 
     def extract_from_bytes(self, file_bytes: bytes, filename: str) -> str:
-        """
-        Extract text from a document represented as bytes.
-        The bytes are wrapped in a BytesIO stream and passed to the DocumentConverter for processing.
-
-        Args:
-            file_bytes (bytes): The content of the document in bytes.
-            filename (str): The name of the file, used for logging and error messages.
-
-        Returns:
-            str: The extracted text from the document in Markdown format.
-        """
+        """Convert a document (PDF or image) to Markdown via docling."""
         byte_stream = io.BytesIO(file_bytes)
         doc_stream = DocumentStream(name=filename, stream=byte_stream)
         conversion_result = self.converter.convert(doc_stream)

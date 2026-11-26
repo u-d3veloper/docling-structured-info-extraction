@@ -11,17 +11,9 @@ TYPE_MAPPING = {
 
 
 def build_dynamic_model(schema_dict: dict) -> Type[BaseModel]:
-    """
-    Build a dynamic Pydantic model based on the provided schema dictionary.
-    Each key in the schema dictionary represents a field name, and its value is a dictionary
-    containing the field's type and an optional description.
+    """Build a Pydantic model from ``{field: {type, description}}``.
 
-    Args:
-        schema_dict (dict): A dictionary where each key is a field name and its value is
-        a dictionary with 'type' and 'description' keys.
-
-    Returns:
-        Type[BaseModel]: A dynamically created Pydantic model class with the specified fields.
+    All fields are Optional with default None.
     """
     fields = {}
     for field_name, field_info in schema_dict.items():

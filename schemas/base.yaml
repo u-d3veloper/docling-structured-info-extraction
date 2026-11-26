@@ -40,7 +40,7 @@ voyage_number:
 
 mark:
   type: string
-  description: "The shipping mark : often document start, logo-like. It can be a logo, a symbol. Extract the exact string."
+  description: "Shipping mark reference (e.g. SHIP/PORT/LOT-X), typically a short code near the top of the document."
 
 container_numbers:
   type: list
